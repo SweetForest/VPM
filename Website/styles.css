@@ -1,11 +1,13 @@
 :root {
-  color-scheme: light dark;
-  --primary-color: #333;
-  --secondary-color: #666;
-  --accent-color: #DAA520;
-  --neutral-background: #f8f9fa;
-  --neutral-foreground-rest: #222;
-  --neutral-foreground-hover: #555;
+  --primary-color: #e0e0e0;
+  --secondary-color: #b3b3b3;
+  --accent-color: #ffcc00;
+  --background-color: #1e1e1e;
+  --card-background: #2a2a2a;
+  --border-color: #3a3a3a;
+  --text-color: #ffffff;
+  --text-muted: #b3b3b3;
+  --highlight-color: #ffcc00;
 }
 
 body {
@@ -17,9 +19,8 @@ body {
   align-items: center;
   justify-content: center;
   font-family: 'Lora', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #1e1e1e, #4a4a4a);
-  color: var(--neutral-foreground-rest);
-  overflow: hidden;
+  background: linear-gradient(135deg, #1a1a1a, #333333);
+  color: var(--text-color);
 }
 
 .content {
@@ -27,39 +28,40 @@ body {
   width: 100%;
   margin: 0 auto;
   padding: 2rem;
-  background-color: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border-radius: 20px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  background-color: var(--card-background);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.8);
 }
 
 h1 {
   font-family: 'Playfair Display', serif;
   font-size: 2.5rem;
   color: var(--accent-color);
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   text-align: center;
   text-transform: uppercase;
+  letter-spacing: 1.5px;
 }
 
 .caption1, .caption2 {
   font-family: 'Lora', serif;
-  color: var(--secondary-color);
+  color: var(--text-muted);
 }
 
 .packages {
   margin: 1rem 0;
-  padding: 0.5rem;
-  border: 1px solid var(--secondary-color);
+  padding: 1rem;
+  background-color: var(--background-color);
+  border: 1px solid var(--border-color);
   border-radius: 12px;
-  background-color: rgba(255, 255, 255, 0.05);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
 .packages .packageName {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: var(--accent-color);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--highlight-color);
 }
 
 .searchBlock {
@@ -69,11 +71,11 @@ h1 {
 #searchInput {
   padding: 0.75rem;
   font-size: 1rem;
-  border: 1px solid var(--secondary-color);
+  border: 1px solid var(--border-color);
   border-radius: 8px;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.1);
-  color: var(--neutral-foreground-rest);
+  background-color: var(--card-background);
+  color: var(--text-color);
   transition: box-shadow 0.3s ease;
 }
 
@@ -89,30 +91,30 @@ h1 {
   background-size: cover;
   background-position: center;
   margin-bottom: 1rem;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
 }
 
 .badge {
-  border-radius: 6px;
+  border-radius: 8px;
   padding: 0.5rem 1rem;
-  background-color: var(--accent-color);
-  color: white;
+  background-color: var(--highlight-color);
+  color: #000;
   font-weight: bold;
 }
 
 button {
-  padding: 0.75rem 1.25rem;
+  padding: 0.75rem 1.5rem;
   font-size: 1rem;
-  background-color: var(--accent-color);
-  color: white;
+  background-color: var(--highlight-color);
+  color: #000;
   border: none;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
   cursor: pointer;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 button:hover {
-  background-color: #b8860b;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+  background-color: #e6b800;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
 }
