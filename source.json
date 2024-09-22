@@ -12,6 +12,7 @@
         "url":"http://sweetforest.booth.pm",
         "text":"Sweet Forest's Booth"
     },
+    
     "bannerUrl":"icon.png",
     "githubRepos":[
         "SweetForest/LazyToggleObjectMA"
