@@ -14,7 +14,8 @@
     },
     "bannerUrl":"banner.png",
     "githubRepos":[
-        "SweetForest/LazyToggleObjectMA"
+        "SweetForest/LazyToggleObjectMA",
+        "SweetForest/VPMTemplate"
     ],
     
     "packages":[]
