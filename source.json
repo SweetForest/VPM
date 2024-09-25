@@ -15,7 +15,8 @@
     
     "bannerUrl":"icon.png",
     "githubRepos":[
-        "SweetForest/LazyToggleObjectMA"
+        "SweetForest/LazyToggleObjectMA",
+        "SweetForest/FreezeMoveGestureMA"
     ],
 
     
